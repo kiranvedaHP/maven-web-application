@@ -11,7 +11,7 @@ git branch: 'development', credentialsId: 'e21eed53-83d9-470e-b1af-29220c5de83a'
 stage('Build'){
 sh "${mavenHome}/bin/mvn clean package"
 }
-
+/*
 stage('ExecuteSonarQubeReport'){
 sh "${mavenHome}/bin/mvn sonar:sonar"
 }
@@ -33,5 +33,5 @@ stage('SendEmailNotification'){
 emailext body: '''Regards,
 Kiran''', subject: 'Buildover', to: 'kiranhp72@gmail.com'
 }
-
+*/
 }
